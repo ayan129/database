@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Base</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCXA700BiUT0Yb16BN0o_61qB6A8RBcpQA",
+      authDomain: "test-js-6e9cf.firebaseapp.com",
+      databaseURL: "https://test-js-6e9cf.firebaseio.com",
+      projectId: "test-js-6e9cf",
+      storageBucket: "test-js-6e9cf.appspot.com",
+      messagingSenderId: "76981816636",
+      appId: "1:76981816636:web:1c30159885ebcbad60a239",
+      measurementId: "G-ZFDW3WWT8H"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+
+
+</head>
+<body>
+<fieldset>
+    <h1 class="oppo">
+      Data Base Managment System
+    </h1>
+    </fieldset>
+    <br>
+    <br>
+    <br>
+ <fieldset class="oppo">
+  <span> USER NAME </span> &nbsp; <input type="text" id="name" placeholder="Enter Your User Name">
+   <br>
+   <br>
+
+   <span> PASSWORD </span> &nbsp; &nbsp;  <input type="password" id="password" placeholder="Enter Your Password">
+   <br>
+   <br>
+   <span> CONTACT NO </span> &nbsp; &nbsp;  <input type="password" id="contactno" placeholder="Enter Your Contact No">
+   <br>
+   <br>
+
+   <button  onclick="savedata()"> Save Your Data </button>
+ </fieldset>
+
+
+
+
+ 
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
